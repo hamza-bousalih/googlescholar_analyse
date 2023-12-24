@@ -1,8 +1,5 @@
-Certainly! Below is a template for the README file for your GitHub repository:
-
----
-
 # Google Scholar Profile Analyzer
+---
 
 This repository is dedicated to analyzing profiles from Google Scholar using web scraping techniques. The project is structured into four main folders: `extract`, `transform`, `load`, and `analysis`. Each folder serves a specific purpose in the data extraction and analysis pipeline.
 
