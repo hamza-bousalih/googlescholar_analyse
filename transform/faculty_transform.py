@@ -24,16 +24,18 @@ def transform_to_other(e):
 faculties_transform = [
     Transform("FSTG", transform_to_fstg),
     Transform("ENSA", transform_to_ensa),
-    Transform("Other", transform_to_other),
+    # Transform("Other", transform_to_other),
 ]
 
 
 def transform_faculties(data):
     for ind, item in enumerate(data):
+        print(item.get("ASS - Unevercity"))
         for transform in faculties_transform:
             if transform.test(item.get("ASS - Unevercity", "")):
                 data[ind]["faculty"] = transform.value
                 break
+            # else: data[ind]["faculty"] = item.get("ASS - Unevercity")
             # else: data[ind]["faculty"] = "None"
 
 
